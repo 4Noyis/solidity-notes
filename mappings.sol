@@ -69,6 +69,6 @@ contract exampleContract{
         names[msg.sender] = _name;
     }
     function getName() public view returns (string memory){
-        return[msg.sender];
+        return names[msg.sender];
     }
 }
